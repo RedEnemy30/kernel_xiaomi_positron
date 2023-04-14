@@ -1794,10 +1794,7 @@ static int _wake(struct kgsl_device *device)
 		kgsl_pwrctrl_irq(device, KGSL_PWRFLAGS_ON);
 		trace_gpu_frequency(
 			pwr->pwrlevels[pwr->active_pwrlevel].gpu_freq/1000, 0);
-
 		kgsl_bus_update(device, KGSL_BUS_VOTE_ON);
-
-		/* Turn on the core clocks */
 		kgsl_pwrctrl_clk(device, KGSL_PWRFLAGS_ON, KGSL_STATE_ACTIVE);
 
 		device->ftbl->deassert_gbif_halt(device);
