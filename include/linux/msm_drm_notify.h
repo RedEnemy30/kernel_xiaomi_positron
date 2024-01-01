@@ -25,8 +25,8 @@ enum {
 	MSM_DRM_BLANK_POWERDOWN_CUST,
 	/*panel 60HZ */
 	MSM_DRM_DYNAMICFPS_60 = 60,
-	/*panel 90HZ */
-	MSM_DRM_DYNAMICFPS_90 = 90,
+	/*panel 120HZ */
+	MSM_DRM_DYNAMICFPS_90 = 120,
 };
 
 enum msm_drm_display_id {
