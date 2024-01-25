@@ -1304,10 +1304,6 @@
 		interrupt-names = "dcvsh0_int", "dcvsh1_int";
 		#freq-domain-cells = <2>;
 
-		qcom,cpufreq-table-0 =
-			<1708800>,
-			<1804800>;
-
 		qcom,cpufreq-table-1 =
 			<1228800>,
 			<1401600>,
@@ -1337,7 +1333,8 @@
 		BW_OPP_ENTRY( 1353, 4); /*  5161 MB/s */
 		BW_OPP_ENTRY( 1555, 4); /*  5931 MB/s */
 		BW_OPP_ENTRY( 1804, 4); /*  6881 MB/s */
-		BW_OPP_ENTRY( 2092, 4); /*  7980 MB/s */
+		BW_OPP_ENTRY( 2133, 4); /*  8137 MB/s */
+		BW_OPP_ENTRY( 2400, 4); /*	OVERCLOCK-MEM-READ */
 	};
 
 	cpu_cpu_ddr_bw: qcom,cpu-cpu-ddr-bw {
@@ -1488,7 +1485,7 @@
 			< 1516800  921600000 >,
 			< 1651200 1171200000 >,
 			< 1900800 1382400000 >,
-			< 2054400 1497600000 >;
+			< 2400000 1459000000 >;
 	};
 
 	cpu_memlat_cpugrp: qcom,cpu-cpugrp {
